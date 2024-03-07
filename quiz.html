@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Shaila Moulee | Quiz</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="quizHeader"></div>
+  <div class="mainContainer">
+    <div class="quiz-count"></div>
+    <div class="userInfo">
+      <p>Before we begin, please tell us a little bit about yourself:</p><br>
+      <p>What's your preferred name?</p>
+      <input type="text" class="userName" placeholder="Enter your preferred name">
+      <br><br>
+      <p>How old are you?</p>
+      <input type="number" class="userAge" placeholder="Enter your age" maxlength="2"><br>
+      <div class="buttons">
+        <button class="continue">Continue</button>
+      </div>
+    </div>
+
+    <div id="quiz">
+      <div id="progress-bar">
+        <div id="progress"></div>
+      </div>
+      <div id="quizContent">
+        <p class="question"></p>
+        <ul class="options">
+          <li><input type="radio" name="answer" value="1">Option 1</li>
+          <li><input type="radio" name="answer" value="2">Option 2</li>
+          <li><input type="radio" name="answer" value="3">Option 3</li>
+          <li><input type="radio" name="answer" value="4">Option 4</li>
+        </ul><br>
+        <div class="buttons">
+          <button id="next">Next</button>
+        </div>
+      </div>
+      <div id="result">
+        <h2 class="result-header"></h2>
+        <div class="result-content">
+          <img class="result-image" src="" alt="">
+          <div class="result-facts"></div>
+        </div><br>
+        <div class="user-info"></div>
+        <div class="buttons">
+          <a href="quiz.html" id="restartQuiz">RESTART</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">Shaila Moulee &copy 2024</footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
