@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Garamond, serif;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #FFF7F4;
+}
+
+.mainContainer {
+  width: 90%;
+  margin: auto;
+}
+
+
+/*Landing Page*/
+#landingHeader {
+  width: 100%;
+  height: 400px;
+  padding-top: 100px;
+  margin-bottom: 300px;
+  background:url("https://images.pexels.com/photos/4870644/pexels-photo-4870644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;  
+  background-size: cover;
+}
+
+.blurb {
+  display: flex;
+  width: 60%;
+  height: 500px;
+  margin: auto;
+  padding: 40px;
+  border-radius: 25px;
+  align-content: center;
+  justify-content: space-between;
+  background-color: #CCCFD1;
+}
+
+#blurbContent {
+  font-size: 23px;
+  text-align: center;
+  width: 50%;
+}
+
+#blurbText {
+  margin-bottom: 30px;
+}
+
+
+/*Quiz Page*/
+#quizHeader {
+  width: 100%;
+  height: 200px;
+  padding-top: 100px;
+  margin-bottom: 30px;
+  background:url("https://images.pexels.com/photos/19648025/pexels-photo-19648025/free-photo-of-landscape-of-green-rocky-hills.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;  
+  background-size: cover;
+}
+
+.quiz-count {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.userInfo {
+  font-size: 19px;
+}
+
+input {
+  width: 190px;
+  height: 25px;
+  padding: 5px;
+  font-size: 18px;
+}
+
+
+#result {
+  margin-top: 20px;
+  font-size: 1.2em;
+  display: none;
+}
+
+#progress-bar {
+  width: 90%;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+#progress {
+  width: 0%;
+  height: 100%;
+  background-color: #4CAF50;
+  transition: width 0.3s ease-in-out;
+}
+
+#result {
+  text-align: center;
+  margin: 40px auto;
+  width: 80%;
+  height: 600px;
+  border-radius: 10px;
+  background-color: #CCCFD1;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+}
+
+.result-header {
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.result-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result-image {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.result-facts {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.question {
+  font-family: Roboto, sans-serif;
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.options li {
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  color: #4CAF50;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.options li:hover {
+  background-color: #f5f5f5;
+}
+
+.options li input:checked {
+  background-color: #3e8e41;
+  color: #fff;
+}
+
+
+/*Button*/
+a, button {
+  width: 120px;
+  color: white;
+  background-color: #889D6A;
+  font-family: 'Cutive Mono', monospace;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 5px;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  border: none;
+  cursor: pointer;
+}
+
+a:hover, button:hover{
+  color: #889D6A;
+  background-color: white;
+  
+}
+
+/*Footer*/
+.footer {
+  clear:both;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 140px;
+  background-color: #393C48;
+  height: 140px;
+  color: white;
+  font-weight: bold;
+  font-size: 14pt;
+}
